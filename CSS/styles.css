@@ -1,86 +1,60 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('../images/bg-container.jpg');
+  background-size: contain;
+  background-position: center;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  color: #f7f7f7;
+  text-transform: uppercase;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  color: #f7f7f7;
+}
+.noteForm-button{
+  width: 30%;
+  margin: auto;
 }
 
-input[type="text"],
-textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    font-size: 16px;
+.btn.btn-success.mt-3 {
+  width: 30%;
+  margin: auto;
 }
-
-button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 .note {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+#notesList {
+  margin-top: 100px;
+}
+.card-body,
+.note.card.mb-3  {
+  background-color: #fffbe2;
 }
 
-.note h3 {
-    margin: 0 0 5px;
+.important-note {
+  background-color: #ffb78d; 
 }
 
-.note p {
-    margin: 0;
-}
-
-.note .note-actions {
-    margin-top: 10px;
-}
-
-.note button {
-    margin-right: 5px;
-}
-
-/* Медиазапросы для адаптивности на экранах смартфонов */
-
-/* Мобильные телефоны в портретной ориентации */
+/* Мобильные телефоны */
 @media (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
-    input[type="text"],
-    textarea {
-        margin-bottom: 15px;
-        padding: 12px;
-        font-size: 18px;
-        width: 100%;
-    }
-    button {
-        padding: 14px 20px;
-        font-size: 18px;
-    }
-    .note {
-        padding: 15px;
-    }
+  .form-check{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .btn.btn-success.mt-3{
+    width: 50%;
+  }
 }
