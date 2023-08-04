@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Заметки</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Заметки</h1>
+      <form id="noteForm">
+        <!-- элементы для фильтрации -->
+        <label>
+          <input type="checkbox" id="importantFilter" />
+          Показать только важные
+        </label>
+
+        <input type="text" id="noteTitle" placeholder="Заголовок" required />
+        <textarea
+          id="noteContent"
+          placeholder="Текст заметки"
+          required
+        ></textarea>
+        <button type="submit">Добавить заметку</button>
+      </form>
+      <div id="notesList"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

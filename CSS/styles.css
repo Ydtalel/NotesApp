@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.note {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.note h3 {
+    margin: 0 0 5px;
+}
+
+.note p {
+    margin: 0;
+}
+
+.note .note-actions {
+    margin-top: 10px;
+}
+
+.note button {
+    margin-right: 5px;
+}
+
+/* Медиазапросы для адаптивности на экранах смартфонов */
+
+/* Мобильные телефоны в портретной ориентации */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    input[type="text"],
+    textarea {
+        margin-bottom: 15px;
+        padding: 12px;
+        font-size: 18px;
+        width: 100%;
+    }
+    button {
+        padding: 14px 20px;
+        font-size: 18px;
+    }
+    .note {
+        padding: 15px;
+    }
+}
