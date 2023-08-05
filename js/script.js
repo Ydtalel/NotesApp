@@ -104,7 +104,7 @@ searchInput.addEventListener('input', () => {
 
 function applyImportantStyles(noteDiv, isImportant) {
   if (isImportant) {
-    noteDiv.style.backgroundColor = '#f8d7da'; // Измените на тот цвет, который вы хотите
+    noteDiv.style.backgroundColor = '#f8d7da'; 
   } else {
     noteDiv.style.backgroundColor = ''; // Сбрасываем фон, если заметка не важная
   }
