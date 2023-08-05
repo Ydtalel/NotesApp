@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -42,6 +46,11 @@ form {
 .card-body,
 .note.card.mb-3  {
   background-color: #ede8d1;
+}
+
+.card-title {
+  font-family: 'Caveat', cursive, serif;
+  font-weight: 600;
 }
 
 .important-note {
