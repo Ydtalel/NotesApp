@@ -16,7 +16,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   color: #f7f7f7;
 }
 .noteForm-button{
@@ -41,11 +41,11 @@ form {
 }
 .card-body,
 .note.card.mb-3  {
-  background-color: #fffbe2;
+  background-color: #ede8d1;
 }
 
 .important-note {
-  background-color: #ffb78d; 
+  background-color: #dcffc3; 
 }
 
 /* Мобильные телефоны */

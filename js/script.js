@@ -56,10 +56,10 @@ function editNote(index) {
   const editedContent = prompt('Введите новый текст заметки', notes[index].content);
 
   if (editedTitle !== null && editedContent !== null) {
-    const important = importantNote.checked; // Получаем значение из чекбокса
+    const isImportant = notes[index].important; // Получаем значение важности из заметки
     notes[index].title = editedTitle;
     notes[index].content = editedContent;
-    notes[index].important = important; // Обновляем значение важности
+    notes[index].important = isImportant; // Сохраняем значение важности обратно
     localStorage.setItem('notes', JSON.stringify(notes));
     displayNotes();
   }
